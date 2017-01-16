@@ -159,12 +159,12 @@
     NSArray* imageArray = @[@"http://7xkjw3.com1.z0.glb.clouddn.com/szjz/64.png"];
     // （注意：图片必须要在Xcode左边目录里面，名称必须要传正确，如果要分享网络图片，可以这样传iamge参数 images:@[@"http://7xkjw3.com1.z0.glb.clouddn.com/szjz/64.png"]）
     if (imageArray) {
-        //https://itunes.apple.com/us/app/shu-zi-jie-zhong/id1193445140?mt=8
+        //
         NSMutableDictionary *shareParams = [NSMutableDictionary dictionary];
-        [shareParams SSDKSetupShareParamsByText:@"快来下载吧"
+        [shareParams SSDKSetupShareParamsByText:@""
                                          images:imageArray
-                                            url:[NSURL URLWithString:[NSString stringWithFormat:@"http://%@/vaccine/",@"202.100.81.124:8010"]]
-                                          title:@"数字接种一体化"
+                                            url:[NSURL URLWithString:@""]
+                                          title:@""
                                            type:SSDKContentTypeAuto];
         
         SSDKPlatformType type = -1;
